@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Record a fullscreen video with ffmpeg
+# Toggleable!
+#
+
+
+notify-send "Start Recording..." &
+
+wf-recorder  --audio --file=$HOME/Videos/screencast-$(date '+%y%m%d-%H%M-%S').mp4

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+
+
+cpupower frequency-set -g performance
+
+notify-send "CPU Performance mode"

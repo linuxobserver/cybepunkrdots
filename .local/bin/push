@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Push a repo to master branch with a message you give
+# Uses "docs:update" otherwise
+#
+
+[ -z "$1" ] && \
+    msg="docs:update" || \
+    msg="$1"
+
+git add .
+git commit -m "${msg}"
+git push origin master

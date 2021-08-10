@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Record a fullscreen video with ffmpeg
+# Toggleable!
+#
+
+
+notify-send "Stop Recording ..." &
+
+killall -s SIGINT wf-recorder

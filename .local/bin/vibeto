@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Simple script to vibe
+# Point to a file or URL
+#
+
+exec mpv --x11-name=no-title \
+         --no-video \
+         --shuffle \
+         "$@" \

@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Display an all inclusive notification
+#
+
+notify-send "$(date +'%I:%M %P')"
+

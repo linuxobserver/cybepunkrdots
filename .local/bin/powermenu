@@ -1,0 +1,38 @@
+#!/bin/bash
+
+echo -e "\e[1m\e[32mSelect an option:"
+echo " "
+echo " "
+echo " "
+echo -e "\e[31m"
+echo " "
+echo "x (logout)"
+echo " "
+echo "r (reboot)"
+echo " "
+echo "s (suspend)"
+echo " "
+echo "p (power off)"
+echo " "
+echo "l (lock)"
+echo -e "\e[0m"
+
+# read user input
+read -n 1 answer
+echo
+
+# conditional
+if [ "$answer" == "x" ]; then
+    swaymsg exit
+elif [ "$answer" == "r" ]; then
+    systemctl reboot
+elif [ "$answer" == "s" ]; then
+    systemctl suspend
+elif [ "$answer" == "p" ]; then
+    systemctl poweroff
+elif [ "$answer" == "l" ]; then
+    waylock
+else
+    exit
+
+fi

@@ -1,0 +1,4 @@
+#!/bin/sh
+# note something down
+
+less ~/Documents/notes/notes.md

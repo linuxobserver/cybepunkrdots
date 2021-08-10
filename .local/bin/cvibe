@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Simple script to vibe
+# Chooses a random file from the specified dir
+#
+mpc stop &
+mpc random on &
+mpc listall | shuf -n 3 | mpc add; mpc play &
+
+exec notify-send "Now Playing ♫" "$(mpc current)"
